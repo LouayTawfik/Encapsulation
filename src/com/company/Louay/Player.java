@@ -1,9 +1,33 @@
 package com.company.Louay;
 
 public class Player {
-    public String name;
-    public int health;
-    public String weapon;
+    private String name;
+    private int health;
+    private String weapon;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public String getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
+    }
 
     public void loseHealth(int damage) {
         this.health -= damage;
